@@ -130,10 +130,10 @@ VALUES
 UPDATE students
 SET age = 16
 WHERE classroom_id IN ( SELECT 
-					  		classroom_id
-					   	FROM classrooms
-					   	WHERE classroom_name = 'Math Class'
-					  )
+				classroom_id
+			FROM classrooms
+			WHERE classroom_name = 'Math Class'
+		  	)
 AND age = 10;
 
 -- Task: Delete all records of students whose "Age" is less than 10.
